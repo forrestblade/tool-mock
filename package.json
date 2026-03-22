@@ -1,6 +1,6 @@
 {
   "name": "tool-mock",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "Mock framework for Claude Code tool responses — test hooks and Sentinel state transitions without real side effects",
   "bin": {

@@ -1,0 +1,1 @@
+Audited 2026-03-22. Fixed: command injection (spawn without bash -c). Verified: no throw/try/catch, no enum/switch, fromThrowable used correctly, 39 tests passing. Remaining: Record<string,unknown> in types (documented limitation for generic tool inputs).

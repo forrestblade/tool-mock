@@ -32,9 +32,10 @@ export function runHook (
   return ResultAsync.fromPromise(
     new Promise<HookResponse>((resolve, reject) => {
       const startTime = Date.now()
-      const child = spawn('bash', ['-c', command], {
+      const child = spawn(command, [], {
         stdio: ['pipe', 'pipe', 'pipe'],
         detached: true,
+        shell: false,
       })
 
       let stdout = ''
